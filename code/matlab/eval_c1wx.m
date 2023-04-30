@@ -1,0 +1,6 @@
+function z=eval_c1wx(x,y)
+phi=x;
+theta=y;
+z=(1/1250).*sin(theta).^2.*((-900).*cos(phi).^4.*sin(theta).^2+(-540).* ...
+  cos(phi).^3.*sin(phi).*sin(theta).^2+2700.*cos(phi).^2.*sin(phi).^2.* ...
+  sin(theta).^2+(-486).*cos(phi).^5.*sin(phi).*sin(theta).^4);

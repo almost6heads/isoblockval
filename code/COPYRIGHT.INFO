@@ -1,0 +1,30 @@
+--------------------------------------------
+IsoBlockValidation Code License Information:
+--------------------------------------------
+
+Copyright (c) 2014, Thomas D. Stephens & Thomas Wanner, George Mason University
+All rights reserved.
+
+If you use this software in publications, please include the reference
+
+   Thomas D. Stephens, Thomas Wanner:
+   "Rigorous validation of isolating blocks for flows and their Conley indices",
+   SIAM Journal on Applied Dynamical Systems 13(4), pp. 1847-1878, 2014.
+
+This software can be downloaded and used for private and for purely academic
+purposes, as long as proper reference is given acknowledging that the software
+package was written by Thomas D. Stephens and Thomas Wanner, George Mason
+University. The use in a commercial setting is only allowed after the expressed
+consent of the authors. For this, contact Thomas Wanner at twanner@gmu.edu.
+
+Neither the name of the university nor the names of the authors may be used to
+endorse or promote products derived with or from this software without specific
+prior written permission.
+
+THIS SOFTWARE IS PROVIDED AS IS AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, WITHOUT LIMITATIONS, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.
+
+DISCLAIMER: Extensive tests have been performed to ensure reliability of the
+algorithms. However, neither an error-free processor nor an error-free program
+can be guaranteed.
