@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<title>Isolating Block Validation in Matlab</title>
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#0000ff">
+
+<center>
+<h1>Isolating Block Validation in Matlab</h1>
+</center>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=25>
+<tr>
+<td>
+<center><img SRC="sec4exEberlein4_3Db.jpg" align=CENTER height=200></center>
+</td>
+<td>
+<center><img SRC="sec4exEberlein4_3Dc.jpg" align=CENTER height=200></center>
+</td>
+<td>
+<center><img SRC="sec4exBoczko1_3Da.jpg" align=CENTER height=200></center>
+</td>
+</tr>
+</table>
+</center>
+
+This web page contains supplemental material for the article <b>Rigorous
+validation of isolating blocks for flows and their Conley indices</b> by
+Thomas Stephens and Thomas Wanner, which will be published in the
+<i>SIAM Journal on Applied Dynamical Systems</i>.
+The <a href="http://www.mathworks.com">Matlab</a> code for validating 
+three-dimensional isolating blocks using the interval arithmetic package
+<a href="http://www.ti3.tu-harburg.de/rump/intlab/">Intlab</a> can be
+downloaded <a href="isoblockval.tar.gz">here</a> as a gzipped tar archive.
+The software contains a few sample scripts, which are described below.
+
+<ul>
+
+<li> The script <b>scriptExitSet.m</b> demonstrates the basic usage of the
+nodal domain validation algorithm at the heart of our method.
+Upon running the script, the nodal domains of the exit set test function
+u are validated for the isolating block C<sub>1</sub> in Section 4.3 of
+the paper. The script also generates numerically computed images of the
+nodal domains of u, as well as of the associated modified tangency
+test function w. After its successful completion, the code will produce
+the three images below. Notice that the algorithm is a randomized method,
+so the specific adaptive grid might be different.
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=25>
+<tr>
+<td>
+<center><img SRC="scriptExitSet1.jpg" align=CENTER height=240></center>
+</td>
+<td>
+<center><img SRC="scriptExitSet2.jpg" align=CENTER height=240></center>
+</td>
+<td>
+<center><img SRC="scriptExitSet3.jpg" align=CENTER height=240></center>
+</td>
+</tr>
+</table>
+</center>
+
+<li> The script <b>scriptIsoBlock.m</b> uses the isolating block algorithm 
+to rigorously validate the set C<sub>1</sub> in Section 4.3 of the paper
+as an isolating block for the flow.
+Upon running the script, it first produces an adaptive grid which
+can be used to validate the nodal domains of the exit set test function u,
+and thus furnishes an image similar to the first one below. It then moves
+through the boxes in the grid in a number of sweeps to ensure the positivity
+of the modified tangency test function w on the nodal lines of u. This
+usually requires additional box refinements and should lead to an image
+to the second one below. Finally, it overlays the final adaptive grid on
+numerically computed nodal domains of u, as well as the black zero set
+of w. Since the algorithm is a randomized method, the specific structure
+of the produced grids might be different.
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=25>
+<tr>
+<td>
+<center><img SRC="scriptIsoBlock1.jpg" align=CENTER height=220></center>
+</td>
+<td>
+<center><img SRC="scriptIsoBlock2.jpg" align=CENTER height=220></center>
+</td>
+<td>
+<center><img SRC="scriptIsoBlock3.jpg" align=CENTER height=220></center>
+</td>
+</tr>
+</table>
+</center>
+
+<li> The <a href="http://www.wolfram.com/mathematica/">Mathematica</a>
+notebook <b>createUWfiles.nb</b> produces the Matlab m-files for the exit
+set test function u, the modified tangency test function w, as well as for
+their partial derivatives with respect to x and y.
+
+</ul>
+
+<hr>
+
+Thomas Wanner, September 28, 2014.
+
+</body>
+</html>
