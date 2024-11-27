@@ -11,10 +11,10 @@ activities, please use the BibTeX citation
 ```latex
 @software{isoblockval,
   author = {Thomas Stephens and Thomas Wanner},
-  title  = {isoblockval},
+  title  = {isoblockval: Rigorous validation of isolating blocks},
   url    = {https://github.com/almost6heads/isoblockval},
   year   = {2016},
-  doi    = {10.5281/zenodo.14229876}
+  doi    = {10.5281/zenodo.14229875}
 }
 ```
 
